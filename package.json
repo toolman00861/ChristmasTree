@@ -3,9 +3,13 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "start": "python -m http.server 5173"
+    "start": "python -m http.server 5173",
+    "build": "node scripts/build.mjs"
   },
   "dependencies": {
     "three": "^0.170.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0"
   }
 }
