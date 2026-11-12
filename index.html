@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#120f0d" />
+  <title>暖光</title>
+  <meta name="description" content="一棵被暖光点亮的圣诞树。窗外是冷的，屋子里不用。" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23120f0d'/%3E%3Cpath fill='%23e6c27a' d='M16 5.2l2.1 6.4h6.7l-5.4 3.9 2.1 6.5L16 18.2 10.5 22l2.1-6.5L7.2 11.6h6.7z'/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <canvas id="view" aria-label="一间亮着圣诞树的屋子"></canvas>
+  <div class="veil" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="mast">
+    <p class="eyebrow">Quiet Night</p>
+    <p class="eyebrow-sub">冬夜</p>
+  </header>
+
+  <main class="caption">
+    <span class="rule" aria-hidden="true"></span>
+    <h1>暖光</h1>
+    <p class="line">窗外开始冷了。<br />树还记得怎么发光。</p>
+    <p class="hint">拖动环顾 · 点开挂饰</p>
+  </main>
+
+  <div class="seal-wrap">
+    <button id="ignite" class="seal" type="button">
+      <span class="seal-kicker">屋子还暗着</span>
+      <span class="seal-label">点亮</span>
+    </button>
+  </div>
+
+  <aside id="note" class="note" aria-hidden="true">
+    <p id="note-text"></p>
+  </aside>
+
+  <nav class="controls" aria-label="气氛">
+    <button type="button" id="btn-snow" aria-pressed="true">落雪</button>
+    <button type="button" id="btn-fire" aria-pressed="true">炉火</button>
+    <button type="button" id="btn-sound" aria-pressed="false">琴声</button>
+    <button type="button" id="btn-again">再点一次</button>
+  </nav>
+
+  <p id="colophon" class="colophon" hidden>炉火环境 · Poly Haven · CC0</p>
+  <p class="fallback">这个浏览器没能点亮画面。请用电脑上的 Chrome 或 Edge 打开。</p>
+
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "./node_modules/three/build/three.module.js",
+      "three/addons/": "./node_modules/three/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>

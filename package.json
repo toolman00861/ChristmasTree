@@ -1,0 +1,11 @@
+{
+  "name": "warm-light",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "start": "python -m http.server 5173"
+  },
+  "dependencies": {
+    "three": "^0.170.0"
+  }
+}
