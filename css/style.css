@@ -286,18 +286,18 @@ body.is-lit #btn-again { display: inline-flex; }
 
 .note {
   position: fixed;
-  left: 50%;
-  bottom: 15vh;
+  left: 36px;
+  top: 46%;
   width: max-content;
   max-width: min(420px, calc(100vw - 48px));
-  padding: 16px 22px 18px;
-  background: var(--paper);
+  padding: 18px 26px 20px;
+  background: #f7f1e6;
   color: var(--paper-ink);
   border-top: 1px solid #c6a36a;
-  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.32);
+  box-shadow: 0 18px 50px rgba(40, 18, 8, 0.28);
   opacity: 0;
   pointer-events: none;
-  transform: translate(-50%, 12px) rotate(-0.4deg);
+  transform: translateY(12px);
   transition: opacity 0.6s ease, transform 0.7s ease;
   user-select: text;
 }
@@ -313,7 +313,7 @@ body.is-lit #btn-again { display: inline-flex; }
 
 .note.show {
   opacity: 1;
-  transform: translate(-50%, 0) rotate(-0.4deg);
+  transform: translateY(0);
 }
 
 .colophon {
@@ -367,7 +367,14 @@ button:focus-visible {
     justify-content: flex-start;
   }
   .colophon { display: none; }
-  .note { bottom: 132px; }
+  .note {
+    left: 16px;
+    right: auto;
+    top: 76px;
+    bottom: auto;
+    width: max-content;
+    max-width: calc(100vw - 32px);
+  }
   .seal { width: 120px; height: 120px; }
   .seal-label { font-size: 26px; }
 }

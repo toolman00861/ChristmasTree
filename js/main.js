@@ -1670,7 +1670,7 @@ async function init() {
   controls.dampingFactor = 0.06;
   controls.enablePan = false;
   controls.autoRotate = !reduceMotion;
-  controls.autoRotateSpeed = 0.22;
+  controls.autoRotateSpeed = 0.08;
   controls.minPolarAngle = 1.18;
   controls.maxPolarAngle = 1.46;
   controls.minAzimuthAngle = -0.7;
